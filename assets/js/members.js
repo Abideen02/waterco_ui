@@ -81,7 +81,7 @@ function saveFormData(data) {
     });
 }
 
-function on(td) {
+function onEdit(td) {
     selectedRecord = td.parentElement.parentElement;
     selectedRecordID = selectedRecord.cells[0].innerHTML;
     document.getElementById("member_name").value = selectedRecord.cells[1].innerHTML;
