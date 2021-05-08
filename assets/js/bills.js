@@ -7,7 +7,7 @@
 var selectedRecord = null;
 var selectedRecordID = null;
 var baseUrl = "http://localhost:2021";
-
+  
 $(document).ready(function () {
     $.ajax({
         type: "GET",
@@ -37,10 +37,9 @@ function addRecordToTable(data) {
                         <a href="index.php?page=billdash&id="` + data.bill_id + `>View</a>
                         <a onClick="onDelete(this)">Delete</a>`;
 }
-
+ 
 function onFormSubmit() {
     var formData = {};
-    formData["bill_id"] = document.getElementById("bill_id").value;
     formData["premise_id"] = document.getElementById("premise_id").value;
     formData["tarrif_id"] = document.getElementById("tarrif_id").value;
     
@@ -71,16 +70,15 @@ function saveFormData(data) {
 function on(td) {
     selectedRecord = td.parentElement.parentElement;
     selectedRecordID = selectedRecord.cells[0].innerHTML;
-    document.getElementById("bill_id").value = selectedRecord.cells[1].innerHTML;
-    document.getElementById("premise_id").value = selectedRecord.cells[2].innerHTML;
-    document.getElementById("tarrif_id").value = selectedRecord.cells[3].innerHTML;
+    document.getElementById("premise_id").value = selectedRecord.cells[1].innerHTML;
+    document.getElementById("tarrif_id").value = selectedRecord.cells[2].innerHTML;
 }
 
 function updateFormRecord(data) {
     var updateData = JSON.stringify(data);
     $.ajax({
         type: 'PUT',
-        url: baseUrl + "/routes/" + selectedRecordID,
+        url: baseUrl + "/bills/" + selectedRecordID,
         dataType: 'json',
         data: updateData,
         contentType: "application/json; charset=utf-8",
@@ -94,9 +92,8 @@ function updateFormRecord(data) {
 
 function updateTableRecord(data) {
     selectedRecord.cells[0].innerHTML = selectedRecordID;
-    selectedRecord.cells[1].innerHTML = data.bill_id;
-    selectedRecord.cells[2].innerHTML = data.premise_id;
-    selectedRecord.cells[3].innerHTML = data.tarrif_id;
+    selectedRecord.cells[1].innerHTML = data.premise_id;
+    selectedRecord.cells[2].innerHTML = data.tarrif_id;
 }
 
 function onDelete(td) {
@@ -109,7 +106,7 @@ function onDelete(td) {
 }
 
 function clearForm() {
-    document.getElementById("bill_id").value = "";
+    
     document.getElementById("premise_id").value = "";
     document.getElementById("tarrif_id").value = "";
 }

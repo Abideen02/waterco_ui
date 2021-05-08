@@ -31,6 +31,7 @@
         </style>
         <!-- Custom styles for this template -->
         <link href="assets/css/starter-template.css" rel="stylesheet">
+
     </head>
     <body>
         <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
@@ -58,13 +59,13 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="index.php?page=bill">Bills</a>
-                    </li> 
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.php?page=signin">Sign In</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="index.php?page=signin">Sign In</a>
+                    </li> 
+                    <li class="nav-item">
                         <a class="nav-link" href="index.php?page=login">Login</a>
-                    </li>    
+                    </li>        
                 </ul>
             </div>
         </nav>
@@ -94,14 +95,9 @@
             ?>
 
         </main><!-- /.container -->
-        
+
         <script src="assets/js/jquery-3.3.1.js"></script>
-        <script src="assets/js/bootstrap.bundle.js"></script>
-        <script src="assets/js/members.js"></script>
-        <!-- <script src="assets/js/payments.js"></script>
-        <script src="assets/js/premises.js"></script>
-        <script src="assets/js/routes.js"></script>
-        <script src="assets/js/bills.js"></script> -->
+        <script src="assets/js/bootstrap.bundle.js"></script> 
         
     </body>
 </html>

@@ -1,34 +1,30 @@
-<link rel="stylesheet" href="style.css">
-<<!-- Button to open the modal -->
-<button onclick="document.getElementById('id01').style.display='block'">Sign Up</button>
+<!DOCTYPE html>
+<html lang="en">
 
-<!-- The Modal (contains the Sign Up form) -->
-<div id="id01" class="modal">
-  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">times;</span>
-  <form class="modal-content" action="/action_page.php">
-    <div class="container">
-      <h1>Sign Up</h1>
-      <p>Please fill in this form to create an account.</p>
-      <hr> 
-      <label for="email"><b>Email</b></label>
-      <input type="text" placeholder="Enter Email" name="email" required>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/login.css">
+  <title>Create Account</title>
+</head>
 
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
-
-      <label for="psw-repeat"><b>Repeat Password</b></label>
-      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-
-      <label>
-        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-      </label>
-
-      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-
-      <div class="clearfix">
-        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-        <button type="submit" class="signup">Sign Up</button>
-      </div>
+<body>
+  <div id="login-box">
+    <div class="left">
+      <h1>Sign up</h1>
+      <form onsubmit="event.preventDefault(); onUserDetailsSubmitTwo();">
+        <input type="email" name="email_address" placeholder="email_address" id="email_address"/>
+        <input type="text" name="full_name" placeholder="full_name" id="full_name"/>
+        <input type="password" name="password" placeholder="password" id="password"/>
+        <input type="submit" value="create biller">
+      </form>
+      <a href="./login.php">Have an
+        account? Login</a>
     </div>
-  </form>
-</div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./assets/js/signin.js"></script>
+</body>
+
+</html>

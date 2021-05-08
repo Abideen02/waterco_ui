@@ -1,7 +1,7 @@
 <html>
 <head>
     <title>Water Company</title>
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="assets/css/home.css">
 </head>
 <body>
     <div class="banner">

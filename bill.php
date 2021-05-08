@@ -4,12 +4,6 @@
 <div class="row">
     <div class="col-md-4">
         <form onsubmit="event.preventDefault(); onFormSubmit();">
-        <div class="form-group row">
-                <label for="bill_id" class="col-sm-4 col-form-label col-form-label-sm">Bill ID:</label>
-                <div class="col-sm-8">
-                    <input type="text" name="bill_id" class="form-control form-control-sm" id="bill_id" placeholder="Bill ID">
-                </div>
-            </div>
             <div class="form-group row">
                 <label for="premise_id " class="col-sm-4 col-form-label col-form-label-sm">Premise ID:</label>
                 <div class="col-sm-8">
@@ -47,3 +41,5 @@
         </div>
     </div>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="./assets/js/bills.js"></script>

@@ -4,16 +4,11 @@
 <div class="row">
     <div class="col-md-4">
         <form onsubmit="event.preventDefault(); onFormSubmit();">
-            <div class="form-group row">
-                <label for="route_id" class="col-sm-4 col-form-label col-form-label-sm">Route ID:</label>
-                <div class="col-sm-8">
-                    <input type="text" name="route_id" class="form-control form-control-sm" id="route_id" placeholder="Route ID">
-                </div>
-            </div>
+           
             <div class="form-group row">
                 <label for="route_name " class="col-sm-4 col-form-label col-form-label-sm">Route Name:</label>
                 <div class="col-sm-8">
-                    <input type="email" name="route_name" class="form-control form-control-sm" id="route_name" placeholder="Route Name">
+                    <input type="text" name="route_name" class="form-control form-control-sm" id="route_name" placeholder="Route Name">
                 </div>
             </div>
             <div class="form-group row">
@@ -27,7 +22,7 @@
         <div class="table-responsive">
             <table class="table table-striped table-sm" id="routeslist">
                 <thead>
-                    <tr>
+                    <tr> 
                         <th>Route ID</th>
                         <th>Route Name</th>
                         
@@ -41,3 +36,5 @@
         </div>
     </div>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="./assets/js/routes.js"></script>

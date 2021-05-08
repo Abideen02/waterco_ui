@@ -6,7 +6,7 @@
 }
 .banner{
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url("wu.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url("../images/wu.jpg");
     background-size: cover;
     background-position: center;
 }

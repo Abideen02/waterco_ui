@@ -21,7 +21,7 @@ $(document).ready(function () {
         }
     });
 });
-   
+
 function addRecordToTable(data) {
     var memberslist = document.getElementById("memberslist").getElementsByTagName("tbody")[0];
     var newRecord = memberslist.insertRow(memberslist.length);
@@ -138,3 +138,4 @@ function clearForm() {
     document.getElementById("address").value = "";
     document.getElementById("referral_id").value = "";
 }
+

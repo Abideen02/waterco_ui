@@ -18,7 +18,7 @@
                         <option value="Female">Female</option>
                         <option value="Male">Male</option>
                     </select>
-                </div>
+                </div> 
             </div>
             <div class="form-group row">
                 <label for="email_address" class="col-sm-4 col-form-label col-form-label-sm">Email Address:</label>
@@ -80,3 +80,5 @@
         </div>
     </div>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="./assets/js/members.js"></script>
