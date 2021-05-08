@@ -6,7 +6,7 @@
 
 var selectedRecord = null;
 var selectedRecordID = null;
-var baseUrl = "http://localhost:2021";
+var baseUrl = "https://waterco--api.herokuapp.com";
 
 $(document).ready(function () {
     $.ajax({
